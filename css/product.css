@@ -1,0 +1,237 @@
+#description {
+  margin-top: 80px;
+  background-color: rgba(255, 255, 255, 0.603);
+  margin-bottom: 30px;
+}
+
+#description h1 {
+  margin-bottom: 30px;
+}
+
+.product {
+  width: 1050px;
+  margin: auto;
+  margin-bottom: 40px;
+  border: 1px solid rgba(211, 211, 211, 0.76);
+  box-shadow: 0 0 20px rgba(190, 190, 190, 0.76);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.img_description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+}
+
+
+.add_list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px;
+  }
+  
+  .product_wish_list, .product_basket {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    cursor: pointer;
+    align-items:center;
+  }
+  
+  .product_wish_list .like {
+  background-image: url(../images/like-heart-outline-symbol_icon-icons.com_73226.png);
+  background-size: 20px 20px;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  display: block;
+  }
+  
+  .product_basket .basket {
+    background-image: url(../images/basket_no.png);
+    background-size: 25px 25px;
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .product_wish_list .like:hover {
+  background-image: url(../images/heart-icon_34407.png);
+  }
+  
+  .product_basket .basket:hover {
+    background-image: url(../images/basket_green.png);
+    border-radius: 12.5px;
+  }
+  
+  .like.active {
+  background-image: url(../images/heart-icon_34407.png);
+  }
+  
+  .basket.active {
+    background-image: url(../images/basket_green.png);
+    border-radius: 12.5px;
+  }
+  
+
+
+.product_description {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.product_description p {
+    margin: 10px auto;
+}
+
+.product_links {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.product_links a {
+    margin: 10px auto;
+}
+
+.product_links a:hover {
+    color: rgb(0, 0, 116);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.product_description table {
+    margin-top: 30px;
+    color:rgb(71, 71, 71);
+}
+
+.product_description table caption {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.product_description table .first_clm {
+    background-color: rgba(179, 179, 179, 0.719);
+}
+
+.product_description table .second_clm {
+    background-color: rgba(229, 228, 255, 0.692);
+}
+
+.product_description table tr td {
+    padding: 10px;
+    text-align: left;
+}
+
+.product_description table tr td:first-child {
+    font-weight: 500;
+    text-align: left;
+}
+ 
+#description hr {
+    border-color: rgba(170, 147, 255, 0.548);
+    box-shadow: 0 0 10px rgb(125, 89, 255);
+    width: 1050px;
+}
+
+.availability {
+    width: 900px;
+    margin: auto;
+    color:rgb(40, 19, 59);
+    padding: 20px;    
+}
+
+
+.slide-two .product_carousel {
+    margin: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.705);
+  }
+  
+  .slide-two .product_carousel:hover {
+    box-shadow: 0 0 10px rgb(133, 133, 133);
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .slide-two .product_carousel img {
+    width: 300px;
+    height: 225px;
+    margin: auto;
+  }
+  
+  .product_carousel hr {
+    width: 90%;
+  }
+  
+
+@media (max-width: 1199px) {      
+      .product {
+        width: 700px;
+      }
+      
+      .img_description {
+        width: 100%;
+      }
+            
+      .product_description {
+          width: 100%;
+      }      
+      
+      #description hr {
+          width: 700px;
+      }
+      
+      .availability {
+          width: 600px; 
+      }
+      
+}
+
+@media (max-width: 768px) {
+    .product {
+      width: 400px;
+    }    
+              
+    #description hr {
+        width: 400px;
+    }
+    
+    .availability {
+        width: 380px; 
+    }
+
+    .product_description table tr td {
+        padding: 3px;
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .product {
+      width: 300px;
+    }    
+              
+    #description hr {
+        width: 280px;
+    }
+    
+    .availability {
+        width: 280px; 
+        padding: 10px;
+        text-align: center;
+    }
+}
